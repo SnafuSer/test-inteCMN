@@ -1,10 +1,10 @@
-$('.input').on('focus', '.input-2', function (e) {
-	$parent = $(this).parent('.input');
+$('.label').on('focus', '.input', function (e) {
+	$parent = $(this).parent('.label');
 	$parent.addClass('selected');
 });
 
-$('.input').on('blur', '.input-2', function (e) {
+$('.label').on('blur', '.input', function (e) {
 	if ($(this).val() == "") {
-		$(this).parent('.input').removeClass('selected');	
+		$(this).parent('.label').removeClass('selected');	
 	}
 });
